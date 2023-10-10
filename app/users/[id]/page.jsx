@@ -7,7 +7,7 @@ const getUser = async id => {
 const UserPage = async ({ params }) => {
   const user = await getUser(params.id);
   return (
-    <div className="bg-slate-400 p-10 rounded-md">
+    <div className="bg-slate-400 p-5 rounded-md">
       <img src={user.avatar} alt="User picture" className="m-auto my-4 rounded-md" />
       <h3 className="text-3xl font-bold">
         {user.id} {user.first_name} {user.last_name}

@@ -1,13 +1,12 @@
 import Link from "next/link";
-import React from "react";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="bg-slate-400 h-fit flex justify-between items-center px-20 p-3 font-bold text-black">
       <Link href="/">Home</Link>
       <ul>
         <li>
-          <Link>Users</Link>
+          <Link href="/about">About</Link>
         </li>
       </ul>
     </nav>
